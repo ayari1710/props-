@@ -3,9 +3,9 @@ import PropsTypes from "prop-types";
 const Profile = (props) => {
   return (
     <div className=" second">
-              <button onClick={() => props.handleName(props.name)}>bienvenue</button>
+      <button onClick={() => props.handleName(props.name)}>bienvenue</button>
 
-      <h1 >Le Profile</h1>
+      <h1>Le Profile</h1>
       {props.children}
       <h2>{props.name}</h2>
       <h2>{props.bio}</h2>
