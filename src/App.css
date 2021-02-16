@@ -1,0 +1,13 @@
+.first{
+background-color: brown;
+
+border-radius: 20px;
+}
+.second{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.title{
+  text-align: center;
+}
