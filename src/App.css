@@ -1,13 +1,22 @@
-.first{
-background-color: brown;
+.name{
+  color: blue;
+  text-shadow: chocolate;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: x-large;
+}
 
-border-radius: 20px;
+
+.bio{
+  color: blue;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
 }
-.second{
-  display: flex;
-flex-direction: column;
-justify-content: center;
+.prof{
+  color: blue;
+  text-align: center;
 }
-.title{
+.photo{
   text-align: center;
 }

@@ -1,27 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Profile from "./profile/Profile";
+import React, { Component } from "react";
+import Profil from "./Profil";
+import "./App.css"
+export default class App extends Component {
+ state={
+   show:false
+ }
 
-function App() {
-  const name = "Ayari Mohamed rafik ";
-  const bio = "Nee le 17/10/1993 et habite a carthage bysra ";
-  const profession = "Pilot ";
-
-  const handleName = (x) => {
-    alert(`welcome ${x}`);
+  handleShow = () => {
+    this.setState({
+      show: !this.state.show,
+    });
   };
-  return (
-    <div className="first">
-      <Profile
-        name={name}
-        bio={bio}
-        profession={profession}
-        handleName={handleName}
-      >
-        <img src="./rafik.jpg" alt="" />
-      </Profile>
-    </div>
-  );
+  render() {
+    return (
+      <div className="cadre">
+        <button className="boutton" onClick={this.handleShow}>toggle</button>
+        {this.state.show && <Profil />}
+      </div>
+    );
+  }
 }
-
-export default App;
